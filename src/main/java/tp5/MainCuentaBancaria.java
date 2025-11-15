@@ -18,6 +18,7 @@ package tp5;
 class Titular {
     private String nombre;
     private String dni;
+    private Pasaporte pasaporte;
     private CuentaBancaria cuenta; // referencia bidireccional
 
     public Titular(String nombre, String dni) {
@@ -32,7 +33,15 @@ class Titular {
     public String getDni() {
         return dni;
     }
+    
+    public Pasaporte getPasaporte() {
+    return pasaporte;
+}
 
+    public void setPasaporte(Pasaporte pasaporte) {
+    this.pasaporte = pasaporte;
+    }
+    
     public CuentaBancaria getCuenta() {
         return cuenta;
     }
